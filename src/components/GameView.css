@@ -1,0 +1,121 @@
+.game-view-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  flex-direction: column;
+}
+
+.game-view-header {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  flex-wrap: wrap;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  border-radius: 8px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1em;
+}
+
+.back-button:hover {
+  background: white;
+  color: #667eea;
+  transform: translateY(-2px);
+}
+
+.game-view-header h2 {
+  color: white;
+  margin: 0;
+  font-size: 1.5em;
+  flex: 1;
+  text-align: center;
+}
+
+.mode-badge {
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  font-weight: 600;
+}
+
+.game-frame-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.game-frame {
+  flex: 1;
+  width: 100%;
+  border: none;
+  border-radius: 15px;
+  background: white;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  min-height: 600px;
+}
+
+.game-info {
+  text-align: center;
+  padding: 15px;
+  color: white;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .game-view-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 20px;
+    gap: 15px;
+  }
+
+  .game-view-header h2 {
+    font-size: 1.1em;
+    order: 2;
+  }
+
+  .back-button {
+    padding: 8px 16px;
+    font-size: 0.9em;
+    order: 1;
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .mode-badge {
+    padding: 8px 16px;
+    font-size: 0.9em;
+    order: 3;
+  }
+
+  .game-frame-container {
+    padding: 10px;
+  }
+
+  .game-frame {
+    min-height: 500px;
+    border-radius: 10px;
+  }
+
+  .game-info {
+    padding: 10px;
+    font-size: 0.9em;
+  }
+}
+
