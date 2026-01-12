@@ -234,50 +234,41 @@
 
 @media (max-width: 768px) {
   .banner-slider {
-    height: 200px;
-    margin-bottom: 20px;
-  }
-
-  .slide-content {
-    padding: 20px 15px;
-  }
-
-  .slide-title {
-    font-size: 1.5em;
+    height: 120px;
     margin-bottom: 10px;
   }
 
-  .slide-subtitle {
+  .slide-content {
+    padding: 10px 15px;
+  }
+
+  .slide-title {
     font-size: 1em;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
+  }
+
+  .slide-subtitle {
+    font-size: 0.75em;
+    margin-bottom: 8px;
   }
 
   .slide-button {
-    padding: 8px 20px;
-    font-size: 0.8em;
+    padding: 6px 15px;
+    font-size: 0.7em;
   }
 
   .slider-nav {
-    width: 35px;
-    height: 35px;
-    font-size: 1.3em;
+    width: 28px;
+    height: 28px;
+    font-size: 1em;
   }
 
   .slider-nav.prev {
-    left: 10px;
+    left: 8px;
   }
 
   .slider-nav.next {
-    right: 10px;
-  }
-
-  .slider-dots {
-    bottom: 10px;
-  }
-
-  .dot {
-    width: 7px;
-    height: 7px;
+    right: 8px;
   }
 }
 

@@ -93,18 +93,18 @@
 
 @media (max-width: 768px) {
   .bonus-marquee-container {
-    padding: 12px 0;
-    margin-bottom: 20px;
+    padding: 6px 0;
+    margin-bottom: 10px;
   }
 
   .marquee-item {
-    font-size: 0.8em;
-    gap: 6px;
-    padding: 0 15px;
+    font-size: 0.7em;
+    gap: 5px;
+    padding: 0 12px;
   }
 
   .marquee-icon {
-    font-size: 1.1em;
+    font-size: 0.9em;
   }
 }
 

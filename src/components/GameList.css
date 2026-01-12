@@ -200,6 +200,13 @@
   z-index: 1;
 }
 
+@media (max-width: 768px) {
+  .game-list-container > .banner-slider {
+    margin: 5px auto;
+    padding: 0 10px;
+  }
+}
+
 .game-main {
   padding: 10px 20px;
   max-width: 1400px;
@@ -210,6 +217,12 @@
 
 .content-wrapper {
   margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+  .content-wrapper {
+    margin-bottom: 8px;
+  }
 }
 
 .section-title {
@@ -224,6 +237,15 @@
   justify-content: center;
   gap: 15px;
   padding: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.3em;
+    margin-bottom: 8px;
+    padding: 8px 0;
+    gap: 10px;
+  }
 }
 
 .section-title::before {
@@ -295,11 +317,24 @@
   margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+  .promotional-section {
+    margin-top: 10px;
+  }
+}
+
 .games-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .games-grid {
+    gap: 10px;
+    margin-top: 8px;
+  }
 }
 
 /* Desktop large: 6 jeux par ligne */
