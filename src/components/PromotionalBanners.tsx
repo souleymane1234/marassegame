@@ -14,28 +14,28 @@ const promos: Promo[] = [
     title: 'VIP Club',
     description: 'Rejoignez le club VIP',
     icon: '👑',
-    color: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)'
+    color: 'linear-gradient(135deg, #1a0a0a 0%, #2d1a0a 50%, #1a0a0a 100%)'
   },
   {
     id: '2',
     title: 'Live Casino',
     description: 'Jeux en direct',
     icon: '🎥',
-    color: 'linear-gradient(135deg, #30cfd0 0%, #330867 100%)'
+    color: 'linear-gradient(135deg, #0a1a0a 0%, #1a2a1a 50%, #0a1a0a 100%)'
   },
   {
     id: '3',
     title: 'Jackpots',
     description: 'Gagnez le gros lot',
     icon: '💎',
-    color: 'linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)'
+    color: 'linear-gradient(135deg, #1a1a0a 0%, #2d2d1a 50%, #1a1a0a 100%)'
   },
   {
     id: '4',
     title: 'Tournois',
     description: 'Participez aux tournois',
     icon: '🏆',
-    color: 'linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%)'
+    color: 'linear-gradient(135deg, #1a0a1a 0%, #2a1a2a 50%, #1a0a1a 100%)'
   }
 ];
 

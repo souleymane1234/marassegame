@@ -1,11 +1,12 @@
 .banner-slider {
   position: relative;
   width: 100%;
-  height: 300px;
-  margin-bottom: 30px;
-  border-radius: 20px;
+  height: 200px;
+  margin-bottom: 12px;
+  border-radius: 15px;
   overflow: hidden;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5), 0 0 30px rgba(255, 215, 0, 0.1);
+  border: 1px solid rgba(255, 215, 0, 0.2);
 }
 
 .slider-container {
@@ -64,8 +65,13 @@
   font-size: 3em;
   font-weight: 900;
   margin: 0 0 15px 0;
-  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(135deg, #ffd700 0%, #ffed4e 50%, #ffd700 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
   animation: pulse 2s infinite;
+  filter: drop-shadow(0 0 10px rgba(255, 215, 0, 0.6));
 }
 
 @keyframes pulse {
@@ -85,24 +91,25 @@
 }
 
 .slide-button {
-  padding: 15px 40px;
-  background: rgba(255, 255, 255, 0.95);
-  border: none;
-  border-radius: 30px;
-  color: #667eea;
-  font-size: 1.1em;
+  padding: 10px 25px;
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.3) 0%, rgba(255, 215, 0, 0.2) 100%);
+  border: 2px solid rgba(255, 215, 0, 0.6);
+  border-radius: 20px;
+  color: #ffd700;
+  font-size: 0.9em;
   font-weight: 700;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 215, 0, 0.3);
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .slide-button:hover {
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-  background: white;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7), 0 0 30px rgba(255, 215, 0, 0.5);
+  background: linear-gradient(135deg, rgba(255, 215, 0, 0.4) 0%, rgba(255, 215, 0, 0.3) 100%);
+  border-color: rgba(255, 215, 0, 0.8);
 }
 
 .slide-shapes {
@@ -202,25 +209,27 @@
 }
 
 .dot {
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
-  border: 2px solid white;
-  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.3);
   cursor: pointer;
   transition: all 0.3s ease;
   padding: 0;
 }
 
 .dot.active {
-  background: white;
-  transform: scale(1.3);
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  background: #ffd700;
+  border-color: #ffd700;
+  transform: scale(1.2);
+  box-shadow: 0 0 8px rgba(255, 215, 0, 0.8);
 }
 
 .dot:hover {
-  transform: scale(1.2);
-  background: rgba(255, 255, 255, 0.5);
+  transform: scale(1.1);
+  background: rgba(255, 215, 0, 0.6);
+  border-color: rgba(255, 215, 0, 0.8);
 }
 
 @media (max-width: 768px) {
@@ -244,8 +253,8 @@
   }
 
   .slide-button {
-    padding: 12px 25px;
-    font-size: 0.9em;
+    padding: 8px 20px;
+    font-size: 0.8em;
   }
 
   .slider-nav {
@@ -267,8 +276,8 @@
   }
 
   .dot {
-    width: 10px;
-    height: 10px;
+    width: 7px;
+    height: 7px;
   }
 }
 

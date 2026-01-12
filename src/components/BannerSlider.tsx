@@ -14,28 +14,28 @@ const banners: Banner[] = [
     id: '1',
     title: '🎁 BONUS DE BIENVENUE',
     subtitle: 'Jusqu\'à 100% + 200 tours gratuits !',
-    background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+    background: 'linear-gradient(135deg, #1a0a0a 0%, #2d1a1a 50%, #1a0a0a 100%)',
     buttonText: 'Réclamer maintenant'
   },
   {
     id: '2',
     title: '⚡ JACKPOT PROGRESSIF',
     subtitle: 'Gagnez jusqu\'à 650 000 000 FCFA !',
-    background: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
+    background: 'linear-gradient(135deg, #0a1a0a 0%, #1a2a1a 50%, #0a1a0a 100%)',
     buttonText: 'Voir les jackpots'
   },
   {
     id: '3',
     title: '🎰 NOUVEAU JEU',
     subtitle: 'Essayez notre dernière création !',
-    background: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+    background: 'linear-gradient(135deg, #1a1a0a 0%, #2d2d1a 50%, #1a1a0a 100%)',
     buttonText: 'Découvrir'
   },
   {
     id: '4',
     title: '💎 VIP EXCLUSIVE',
     subtitle: 'Rejoignez le programme VIP',
-    background: 'linear-gradient(135deg, #fa709a 0%, #fee140 100%)',
+    background: 'linear-gradient(135deg, #1a0a1a 0%, #2a1a2a 50%, #1a0a1a 100%)',
     buttonText: 'En savoir plus'
   }
 ];
@@ -50,10 +50,6 @@ export default function BannerSlider() {
 
     return () => clearInterval(interval);
   }, []);
-
-  const goToSlide = (index: number) => {
-    setCurrentIndex(index);
-  };
 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % banners.length);
@@ -89,15 +85,6 @@ export default function BannerSlider() {
       </div>
       <button className="slider-nav prev" onClick={prevSlide}>‹</button>
       <button className="slider-nav next" onClick={nextSlide}>›</button>
-      <div className="slider-dots">
-        {banners.map((_, index) => (
-          <button
-            key={index}
-            className={`dot ${index === currentIndex ? 'active' : ''}`}
-            onClick={() => goToSlide(index)}
-          />
-        ))}
-      </div>
     </div>
   );
 }

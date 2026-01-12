@@ -94,12 +94,12 @@ export default function GameList({ user, onLogin, onRegister, onLogout, onPlayGa
         </div>
       </header>
 
+      <BannerSlider />
+
       <main className="game-main">
         <div className="content-wrapper">
-          <BannerSlider />
           <BonusMarquee />
           <StatsBar />
-          <PromotionalBanners />
         </div>
         <div className="games-section">
           <h2 className="section-title">
@@ -130,6 +130,9 @@ export default function GameList({ user, onLogin, onRegister, onLogout, onPlayGa
               </div>
             ))}
           </div>
+        </div>
+        <div className="promotional-section">
+          <PromotionalBanners />
         </div>
       </main>
 
